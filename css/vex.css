@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+
+html { 
+font-size: 20px;
+scroll-behavior: smooth;
+}
+
+body {
+	width: 60%;
+	margin: 50px auto;
+	background: rgb(245,245,245); /*specifies background colour*/
+	color: #000; /*specifies text colour*/
+    line-height: 1.5;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Navbar Styles */
+nav.navbar {
+	padding: 20px; /* creates space inside the navbar */
+	background-color: #2596be !important; /* */
+
+}
+nav.navbar .navbar-nav{ /* box that cointains all the links */
+	padding-top: 5px;
+	padding-left: 20px;
+}
+nav.navbar .navbar-nav a.nav-link{
+	padding: 8px 20px; /* creates space around the link */
+	color: #fff; /* sets the link colour */
+	text-align: left;
+	font-size: 1rem;
+}
+
+nav.navbar .navbar-nav a.anav-link:hover{
+	color: #e9bd43;
+}
+
+nav.navbar .navbar-nav .active a.nav-link{
+	font-weight: bold;
+	color: #e9bd43;
+	background: transparent;
+	border-bottom: 4px solid #FFB800;
+}
+
+
+
+/*baseline text styles*/
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+p {
+	font-size: 1rem;
+	margin: 0 0 1rem 0;
+}
+
+ul li {
+	font-size: 0.95rem;
+	margin: 0 0 0.9rem 0;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.cColour {
+	color: #FF3500;
+}
+
+/*Footer Styles */
+footer {
+	width: 100%
+}
+footer h2 {}
+footerL {
+	float: left;
+	padding: 0;
+	border-right: 1px solid #999
+}
+footerR {
+	float: right;
+	text-align: right;
+	padding: 0;
+}
+
+/* Table Styles */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin: 10px auto;
+}
+
+th {
+	font-size: 1rem;
+	font-weight: bold;
+	padding: 10px 8px;
+	border-bottom: 2px solid #000;
+	text-align: center;
+}
+
+td {
+	font-size: 0.9rem;
+	border-bottom: 1px solid #CCC;
+	padding: 12px 6px;
+	text-align: center;
+}
+
+table tr:nth-of-type(even){
+	background-colour: rgb(255,225,225);
+}
+
+table tr:nth-of-type(even) :hover{
+	background-color: rgb(245,215,215);
+	cursor: pointer;
+}
+
+table tr:nth-of-type(odd){
+	background-color: rgb(245,245,245);
+}
+
+table tr:nth-of-type(odd) :hover{
+	background-color: rgb(235,235,235);
+	cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 992px){
+	footerL {
+		border-right: none;
+		border-bottom: 1px solid #999;
+		padding-left: 1rem;
+		
+	}
+	
+	footerR {
+		text-align: left;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-left: 1rem;
+	}
+	
+	footerR p.linked {
+		background: url("images/linkedinlogo.png") no-repeat 65px 0;
+			padding-right: 30px;
+	}
+	
+	form.form-inline {
+	width: 100%;
+	}
+	
+	form.form-inline input[type=search]{
+	width: 90%;
+	}
+	
+	form.form-inline button[type=submit]{
+	display: none;
+	width: 0%;
+	}
+	
+	nav.navbar .navbar-nav {
+	padding-left: 0;
+	}
+	
+	nav.navbar .navbar-nav a.nav.link {
+	padding: 8px 20px 8px 0;
+	width: 50%;
+	}
+	
+	h2 {
+	font-size: 1.1rem;
+	}
+	
+	p{
+	font-size: 0.85rem;
+	}
+}

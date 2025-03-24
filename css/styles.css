@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+
+html { 
+font-size: 20px;
+scroll-behavior: smooth;
+}
+
+body {
+    margin: 50px auto;
+    background: rgb(34, 34, 34); /*specifies background colour*/
+    color: #fff; /*specifies text colour*/
+    line-height: 1.5;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Navbar Styles */
+nav.navbar {
+    padding: 20px; /* creates space inside the navbar */
+    background-color: #444444 !important; /* */
+}
+
+nav.navbar .navbar-nav{ /* box that cointains all the links */
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+nav.navbar .navbar-nav a.nav-link{
+    padding: 8px 20px; /* creates space around the link */
+    color: #00bbff; /* sets the link colour */
+    text-align: left;
+    font-size: 1rem;
+}
+
+nav.navbar .navbar-nav a.anav-link:hover{
+    color: #009cff;
+}
+
+nav.navbar .navbar-nav .active a.nav-link{
+    font-weight: bold;
+    color: #fefefe;
+    background: transparent;
+}
+
+/* Add this rule to target the navbar title (navbar-brand) */
+.navbar-brand {
+    color: white; /* sets the navbar title color to white */
+}
+
+#carouselExampleIndicators1 {
+    margin-top: -40px;
+}
+
+/*baseline text styles*/
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+}
+
+ul li {
+    font-size: 0.95rem;
+    margin: 0 0 0.9rem 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.cColour {
+    color: #FF3500;
+}
+
+/*Image Styles */
+
+#carouselExampleIndicators1 img{
+    width: 100%;
+    height: auto;
+}
+
+/*Footer Styles */
+footer {
+    width: 100%
+}
+
+footer h2 {}
+
+.footerL {
+    float: left;
+    padding: 0;
+    border-right: 1px solid #999
+}
+
+.footerR {
+    float: right;
+    text-align: right;
+    padding: 0;
+}
+
+/* Table Styles */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 10px auto;
+}
+
+th {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 8px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+
+td {
+    font-size: 0.9rem;
+    border-bottom: 1px solid #CCC;
+    padding: 12px 6px;
+    text-align: center;
+}
+
+table tr:nth-of-type(even){
+    background-color: rgb(89, 92, 93);
+}
+
+table tr:nth-of-type(even) :hover{
+    background-color: rgb(0,156,255,255);
+    cursor: pointer;
+}
+
+table tr:nth-of-type(odd){
+    background-color: rgb(84, 88, 89);
+}
+
+table tr:nth-of-type(odd) :hover{
+    background-color: rgb(0,156,255,255);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+    footerL {
+        border-right: none;
+        border-bottom: 1px solid #999;
+        padding-left: 1rem;
+    }
+
+    footerR {
+        text-align: left;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+    }
+
+    footerR p.linked {
+        background: url("images/linkedinlogo.png") no-repeat 65px 0;
+        padding-right: 30px;
+    }
+
+    form.form-inline {
+        width: 100%;
+    }
+
+    form.form-inline input[type=search]{
+        width: 90%;
+    }
+
+    form.form-inline button[type=submit]{
+        display: none;
+        width: 0%;
+    }
+
+    nav.navbar .navbar-nav {
+        padding-left: 0;
+    }
+
+    nav.navbar .navbar-nav a.nav.link {
+        padding: 8px 20px 8px 0;
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    p{
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    table, thread, tbody, th, td, tr, caption {
+        display: block;
+    }
+
+    thread tr {
+        display: none;
+    }
+
+    table tr:nth-of-type(even)  {
+        background-color: rgba(102, 51, 121, .25);
+    }
+
+    table td {
+        border:none;
+        position: relative;
+        text-align: center;
+        font-size: 0.9rem;
+        border-bottom: 2px solid white;
+    }
+
+    td:before {
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        width: 25%;
+        font-weight: bold;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+}
