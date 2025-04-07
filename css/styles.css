@@ -59,6 +59,8 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+	font-variant: normal;
+	
 }
 
 h3 {
@@ -87,8 +89,17 @@ ul li {
     color: #FF3500;
 }
 
+/*Link Styles */
+
 /*Image Styles */
 
+a:link, a:visited, a:active {
+	text-decoration: none;
+	
+}
+a:hover {
+	text-decoration: underline;
+}
 #carouselExampleIndicators1 img{
     width: 100%;
     height: auto;
